@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #0055d4;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 85, 212, 0.8)), to(rgba(0, 85, 212, 0.8))), url("../img/hero.jpg");
   background: linear-gradient(rgba(0, 85, 212, 0.8), rgba(0, 85, 212, 0.8)), url("../img/hero.jpg");
@@ -103,6 +103,15 @@ header .header-container .logo img {
   width: 250px;
 }
 
+@media only screen and (max-width: 600px) {
+  header .header-container .logo {
+    width: 20%;
+  }
+  header .header-container .logo img {
+    width: 150px;
+  }
+}
+
 header .header-container ul {
   list-style: none;
   display: -webkit-box;
@@ -118,6 +127,27 @@ header .header-container ul li img {
   width: 25px;
 }
 
+@media only screen and (max-width: 600px) {
+  header .header-container ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header-container ul li {
+    padding: 7px;
+  }
+  header .header-container ul li img {
+    width: 19px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  header .header-container {
+    width: 60%;
+  }
+}
+
 .hero {
   width: 40%;
   height: 150px;
@@ -129,17 +159,94 @@ header .header-container ul li img {
 }
 
 .hero h1 {
-  font-family: roboto;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 5.5rem;
+  line-height: 100px;
   color: white;
 }
 
+@media only screen and (min-width: 1920px) {
+  .hero h1 {
+    font-size: 5rem;
+    line-height: 75px;
+  }
+}
+
+@media only screen and (max-width: 1610px) {
+  .hero h1 {
+    font-size: 4.5rem;
+    line-height: 75px;
+  }
+}
+
+@media only screen and (max-width: 1175px) {
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+}
+
 .hero p {
-  font-family: roboto;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   padding-top: 25px;
   color: white;
+}
+
+@media only screen and (max-width: 450px) {
+  .hero p {
+    font-size: 1rem;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .hero {
+    width: 40%;
+    top: 50%;
+  }
+}
+
+@media only screen and (max-width: 1875px) {
+  .hero {
+    width: 25%;
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 1610px) {
+  .hero {
+    width: 50%;
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero {
+    width: 80%;
+    top: 50%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .hero {
+    left: 20%;
+  }
 }
 
 footer {
@@ -147,12 +254,18 @@ footer {
   height: 20%;
   position: absolute;
   left: 10%;
-  bottom: 0;
+  bottom: -20px;
   padding-top: 70px;
 }
 
 footer img {
   width: 220px;
+}
+
+@media only screen and (max-width: 600px) {
+  footer img {
+    width: 120px;
+  }
 }
 
 footer .email {
@@ -175,5 +288,33 @@ footer .email a {
   padding-left: 10px;
   text-decoration: none;
   color: #1c1f24;
+}
+
+@media only screen and (max-width: 600px) {
+  footer .email {
+    width: 100%;
+    height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .email img {
+    width: 20px;
+  }
+  footer .email a {
+    font-size: .9rem;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #1c1f24;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  footer {
+    left: 20%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
